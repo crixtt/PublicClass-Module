@@ -8,7 +8,7 @@ Simply drop the module into ReplicatedStorage.
 local PublicClass = require(game.ReplicatedStorage.PublicClass)
 local NewClass = PublicClass("NewClass")
 
-function NewClass.new(self)
+function NewClass.__init(self)
   self.pet = "Cat"
 end
 
