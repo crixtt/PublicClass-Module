@@ -18,6 +18,13 @@ end
 
 return NewClass
 ```
+### ServerScript
+```lua
+local NewClass = require(game.ReplicatedStorage.NewClass)
+local obj = NewClass.new()
+obj:sleep() -- "Put pets to sleep"
+```
+
 # Note
 Note you can also join other metatables to the class by doing:
 ```lua
