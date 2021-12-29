@@ -23,3 +23,4 @@ Note you can also join other metatables to the class by doing:
 ```lua
 NewClass = Public("NewClass", Public("AnotherClass"))
 ```
+If you have any questions, please don't hesitate to leave a reply. :)
