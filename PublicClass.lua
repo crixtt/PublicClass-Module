@@ -1,7 +1,3 @@
---[[
-	Copyright © crixtt's Modules & Systems. All rights reserved.
-	crixtt
-]]
 local function initiate(self, ...)
 	if self.__init then
 		self:__init(...)
