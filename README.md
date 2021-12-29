@@ -21,5 +21,5 @@ return NewClass
 # Note
 Note you can also join other metatables to the class by doing:
 ```lua
-NewClass = Public("NewClass")("AnotherClass")
+NewClass = Public("NewClass", Public("AnotherClass"))
 ```
