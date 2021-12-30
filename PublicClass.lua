@@ -1,6 +1,6 @@
 local function initiate(self, ...)
-	if self.__init then
-		self:__init(...)
+	if self.__init__ then
+		self:__init__(...)
 	end
 end
 return function(name, component)
