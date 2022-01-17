@@ -7,7 +7,7 @@ local function initiate(self, ...)
 		self:__init(...)
 	end
 end
-local methods = {"__add", "__call", "__concat", "__div", "__le", "__lt", "__mod", "__mul", "__pow", "__sub", "__tostring", "__unm", "__index", "__newindex"}
+local methods = {"__add", "__call", "__concat", "__div", "__le", "__lt", "__mod", "__mul", "__pow", "__sub", "__tostring", "__unm"}
 local function inherit(class, super)
 	for _,method in pairs(methods) do
 		class[method] = super[method]
