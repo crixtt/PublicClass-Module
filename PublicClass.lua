@@ -1,3 +1,7 @@
+--[[
+	Copyright © crixtt's Modules & Systems. All rights reserved.
+	crixtt
+]]
 local function initiate(self, ...)
 	if self.__init then
 		self:__init(...)
@@ -12,7 +16,6 @@ end
 local function __tostring(self)
 	return self.ClassName
 end
-local function
 return function(name, super)
 	local class = {}
 	class.__index = class
@@ -21,6 +24,7 @@ return function(name, super)
 	if super then
 		class.Super = super
 		setmetatable(class, super)
+		inherit(class, super)
 	end
 	function class.new(...)
 		local self = setmetatable({}, class)
